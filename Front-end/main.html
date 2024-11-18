@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TaskMaster - Main Page</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Header Section -->
+  <header>
+    <div class="logo">
+      <h1><img src="logo.png" alt="TaskMaster Logo" class="logo"></h1>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="main.html">Home</a></li>
+        <li><a href="tasks.html">Tasks</a></li>
+        <li><a href="profile.html">Profile</a></li>
+        <li><a href="settings.html">Settings</a></li>
+        <li><a href="logout.html">Logout</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main Content Section -->
+  <main>
+    <div class="container">
+      <!-- Left Sidebar Section -->
+      <aside class="sidebar">
+        <section class="task-actions">
+          <h2>Task Actions</h2>
+          <button class="add-task-btn">Add New Task</button>
+        </section>
+        
+        <section class="task-filters">
+          <h2>Filters</h2>
+          <div class="filter">
+            <select>
+              <option value="all">All Tasks</option>
+              <option value="work">Work</option>
+              <option value="personal">Personal</option>
+              <option value="urgent">Urgent</option>
+            </select>
+          </div>
+        </section>
+      </aside>
+
+      <!-- Main Task List Section -->
+      <section class="task-dashboard">
+        <h1>Task Manager Dashboard</h1>
+        
+        <section class="task-list">
+          <!-- Tasks will be dynamically inserted here -->
+        </section>
+
+        <!-- Progress Overview Section -->
+        <section class="progress-overview">
+          <h3>Weekly Progress</h3>
+          <div class="progress-bar">
+            <div class="completed" style="width: 70%;"></div>
+          </div>
+          <p>Tasks Completed: 7/10</p>
+        </section>
+      </section>
+    </div>
+  </main>
+
+  <!-- Footer Section -->
+  <footer>
+    <div class="footer-content">
+      <p>&copy; 2024 TaskMaster. All rights reserved.</p>
+      <ul class="footer-links">
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="privacy.html">Privacy Policy</a></li>
+        <li><a href="terms.html">Terms of Service</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <!-- Add Task Modal -->
+  <div id="add-task-modal" class="modal">
+    <div class="modal-content">
+      <h2>Add New Task</h2>
+      <form id="task-form">
+        <input type="text" id="task-name" placeholder="Task Name" required>
+        <textarea id="task-desc" placeholder="Task Description"></textarea>
+        <input type="date" id="task-due-date" required>
+        <select id="task-priority">
+          <option value="high">High Priority</option>
+          <option value="medium">Medium Priority</option>
+          <option value="low">Low Priority</option>
+        </select>
+        <select id="task-category">
+          <option value="work">Work</option>
+          <option value="personal">Personal</option>
+          <option value="urgent">Urgent</option>
+        </select>
+        <button type="submit">Save Task</button>
+        <button type="button" id="close-modal">Cancel</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,161 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+  }
+  
+  header, footer {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+  }
+  
+  nav ul li {
+    margin: 0 10px;
+  }
+  
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  footer ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+  }
+  
+  footer ul li {
+    margin: 0 10px;
+  }
+  
+  footer ul li a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  /* Main Layout */
+  main {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .sidebar {
+    width: 25%;
+  }
+  
+  .task-dashboard {
+    width: 70%;
+  }
+  
+  .task-actions, .task-filters {
+    margin-bottom: 20px;
+  }
+  
+  button.add-task-btn {
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  button.add-task-btn:hover {
+    background-color: #0056b3;
+  }
+  
+  .task-list {
+    margin-top: 20px;
+  }
+  
+  .task-item {
+    background-color: #f9f9f9;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+  }
+  
+  button.mark-complete {
+    background-color: #28a745;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  button.mark-complete:hover {
+    background-color: #218838;
+  }
+  
+  .progress-overview {
+    margin-top: 30px;
+  }
+  
+  .progress-bar {
+    width: 100%;
+    height: 20px;
+    background-color: #e9ecef;
+    border-radius: 5px;
+    margin-top: 10px;
+  }
+  
+  .progress-bar .completed {
+    height: 100%;
+    background-color: #28a745;
+    border-radius: 5px;
+  }
+  
+  /* Modal Styles */
+  .modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .modal-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    width: 300px;
+  }
+  
+  .modal input, .modal select, .modal textarea, .modal button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .modal button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+  }
+  
+  .modal button:hover {
+    background-color: #0056b3;
+  }
+  
